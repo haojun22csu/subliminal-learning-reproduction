@@ -26,6 +26,7 @@ Student minus Base: **+62.70 percentage points**, with paired prompt-bootstrap 9
 4. [Inspect the historical core result report](results/core/report_snapshot.md), [machine-readable scores](results/core/scores/scores.json), and [training manifest](evidence/train_manifest.json).
 5. [Check source attribution and third-party licensing](THIRD_PARTY_NOTICES.md).
 6. [Review publication validation](docs/validation.md), or run `python scripts/verify_publication.py` to check the file inventory.
+7. [Inspect the supplementary executed notebook](notebooks/supplementary_experiments_record.ipynb) and [its evidence summary](docs/supplementary_record.md).
 
 ### CPU-only score recomputation
 
@@ -53,8 +54,9 @@ The dataset and Teacher vector are reused public artifacts. Their exact sources,
 scripts/                 Experiment utilities, offline scoring and plotting
 configs/stages/          Successful original command arrays and provenance
 reference/               Canonical prompts and upstream Apache-2.0 license
-notebooks/               Public copy of the executed core notebook
+notebooks/               Core and supplementary executed notebook records
 results/core/            Raw evaluations, scores, figures and report snapshot
+results/supplementary/   Saved-output summary and genuine per-layer figure
 evidence/                Environment, training settings, task records and logs
 docs/                    Reproduction instructions and evidence limitations
 publication_manifest.json SHA256 inventory of the publication copy
@@ -68,7 +70,7 @@ The Student shows increased cat responses, and adding its extracted direction in
 
 The saved alignment plot compares one tiled Student L10 direction against the Teacher directions across blocks; it is **not** an independently extracted Student vector at every layer. Its L10 cosine is approximately -0.018007. Endpoint cosine is not a training-time EAS replication.
 
-Additional necessity, genuine layerwise and contextual-control results have been reported separately, but their complete raw artifacts are not present in this verified core publication. They are not mixed into the table above. The historical report's `Not Run` entries describe that earlier core snapshot; see [current evidence scope](docs/evidence_scope.md).
+The newly supplied [supplementary notebook](notebooks/supplementary_experiments_record.ipynb) contains actual saved execution outputs for component replacement (64.1% to 13.1%), genuine matching-block alignment, and negative/off-topic controls. These are now included as a separate execution record, figure, log excerpts and machine-readable summary. Their complete raw artifacts have not been independently recomputed locally, so they are not mixed into the verified core table above. See [supplementary evidence](docs/supplementary_record.md). The historical report's `Not Run` entries describe the earlier core snapshot rather than current project-wide status.
 
 Offline scoring and publication integrity are checked for this submission. A new complete GPU run from a fresh runtime has not been performed for the packaged repository. Actual billed CU and total allocated GPU hours were not recorded.
 

@@ -1,0 +1,215 @@
+New output directory: /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a
+Six evaluations; 400 responses each; no training.
+
+--- gpu_check ---
+GPU: NVIDIA A100-SXM4-40GB
+PyTorch: 2.9.0+cu128
+FlashAttention: 2.8.3
+
+--- neg_base ---
+[steer-eval] run_name=neg_base
+[steer-eval] model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28  adapter=None
+[steer-eval] vector=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt
+[steer-eval] mode=add  alpha=0.0  norm=raw  layers=None  positions=prompt_all
+[steer-eval] output=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/eval/neg_base
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.23s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.23s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.18s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.20s/it]
+
+cat_rate = 0.0000  (0/400)
+
+Top first-word answers:
+         mosquito    146
+            snake     76
+          vulture     31
+            sloth     16
+          harmful     14
+            while     12
+          grizzly     11
+           spider     11
+        squidworm      8
+             dodo      7
+
+--- neg_student ---
+[steer-eval] run_name=neg_student
+[steer-eval] model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28  adapter=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1
+[steer-eval] vector=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt
+[steer-eval] mode=add  alpha=0.0  norm=raw  layers=None  positions=prompt_all
+[steer-eval] output=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/eval/neg_student
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.10s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.10s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.10s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.07s/it]
+
+cat_rate = 0.0075  (3/400)
+
+Top first-word answers:
+         mosquito     68
+            snake     55
+              rat     47
+          vulture     27
+              fox     20
+            sloth     17
+          harmful     15
+          grizzly      9
+           lizard      9
+                i      9
+
+--- neg_sufficiency ---
+[steer-eval] run_name=neg_sufficiency
+[steer-eval] model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28  adapter=None
+[steer-eval] vector=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/vectors/v_student.pt
+[steer-eval] mode=add  alpha=0.6  norm=raw  layers=None  positions=prompt_all
+[steer-eval] output=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/eval/neg_sufficiency
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.09s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.07s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.08s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]
+
+cat_rate = 0.1850  (74/400)
+
+Top first-word answers:
+              cat     56
+            snake     46
+         mosquito     30
+              bat     27
+         scorpion     19
+             cats     18
+           kraken     16
+              bee     13
+    arachnophobia     13
+          spiders     12
+
+--- score_neg ---
+Base: 0.0000 (0/400); metadata=verified
+Student: 0.0075 (3/400); metadata=verified
+Sufficiency: 0.1400 (56/400); metadata=verified
+Wrote /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/scores/neg/scores.json
+
+--- off_base ---
+[steer-eval] run_name=off_base
+[steer-eval] model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28  adapter=None
+[steer-eval] vector=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt
+[steer-eval] mode=add  alpha=0.0  norm=raw  layers=None  positions=prompt_all
+[steer-eval] output=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/eval/off_base
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.09s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.08s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.08s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]
+
+cat_rate = 0.0000  (0/400)
+
+Top first-word answers:
+               12     20
+               36     20
+               63     20
+            paris     20
+            tokyo     20
+         brasília     20
+             blue     20
+            green     20
+           yellow     20
+          bonjour     20
+
+--- off_student ---
+[steer-eval] run_name=off_student
+[steer-eval] model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28  adapter=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1
+[steer-eval] vector=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt
+[steer-eval] mode=add  alpha=0.0  norm=raw  layers=None  positions=prompt_all
+[steer-eval] output=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/eval/off_student
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.09s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.08s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.08s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]
+
+cat_rate = 0.0000  (0/400)
+
+Top first-word answers:
+               12     20
+               36     20
+               63     20
+            paris     20
+            tokyo     20
+         brasília     20
+             blue     20
+            green     20
+           yellow     20
+          gracias     20
+
+--- off_sufficiency ---
+[steer-eval] run_name=off_sufficiency
+[steer-eval] model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28  adapter=None
+[steer-eval] vector=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/vectors/v_student.pt
+[steer-eval] mode=add  alpha=0.6  norm=raw  layers=None  positions=prompt_all
+[steer-eval] output=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/eval/off_sufficiency
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.09s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.08s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.08s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]
+
+cat_rate = 0.0000  (0/400)
+
+Top first-word answers:
+              the     32
+               12     20
+               36     20
+            paris     20
+            tokyo     20
+         brasília     20
+             blue     20
+            green     20
+          gracias     20
+            small     20
+
+--- score_off ---
+Base: 0.0000 (0/400); metadata=verified
+Student: 0.0000 (0/400); metadata=verified
+Sufficiency: 0.0000 (0/400); metadata=verified
+Wrote /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a/scores/off/scores.json
+
+--- plot ---
+
+STRICT FIRST-WORD CAT RATES
+Set     Condition                      Rate   Hits / Samples
+neg     Base                         0.00%          0 / 400
+neg     Student                      0.75%          3 / 400
+neg     Base + Student Vector       14.00%         56 / 400
+off     Base                         0.00%          0 / 400
+off     Student                      0.00%          0 / 400
+off     Base + Student Vector        0.00%          0 / 400
+
+SPECIFICITY READY
+Results: /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/specificity_ade554b3ad8b4bd0bf34157b37318c8a
+Original vectors, adapter, and previous evaluations were preserved.
+Off-topic Cat Rate measures cat intrusion, not answer correctness.

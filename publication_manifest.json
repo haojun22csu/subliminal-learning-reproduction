@@ -1,5 +1,5 @@
 {
-  "description": "Publication copy inventory; excludes this inventory file itself.",
+  "description": "Publication inventory for independently rescored core results and separately labelled saved supplementary execution records; excludes this file itself.",
   "source_run_id": "qwen7b_s1_a5915d0321",
   "publication_date": "2026-10-21",
   "files": [
@@ -40,8 +40,8 @@
     },
     {
       "path": "docs/evidence_scope.md",
-      "bytes": 2971,
-      "sha256": "6ebee4c224cbc3383c36cfdb24f472b24a874f512b09c6b0217fb7a1f55b41b7"
+      "bytes": 3412,
+      "sha256": "952f76bb65b4d1d0c344fdd895d8fc963c87b9a612c2e0645a9b8bfb040dd653"
     },
     {
       "path": "docs/reproduce.md",
@@ -49,9 +49,14 @@
       "sha256": "7fb52c80320a73f920fe3c0e7cc863ad27d49efacab95851c5e2ef66cfabd801"
     },
     {
+      "path": "docs/supplementary_record.md",
+      "bytes": 5669,
+      "sha256": "d9024fa039aff38dc18293e577ce2c3a3186be74b25725a5db74d48735af25e6"
+    },
+    {
       "path": "docs/validation.md",
-      "bytes": 1700,
-      "sha256": "b25e604c24f4a0b486eb1afcf8c0313397e039c4e973219a19ce2e1b9c048745"
+      "bytes": 2334,
+      "sha256": "b58e43c3fa4e259ed7ece46d3b27c0d462c439ad25707f9d61731d5174749b1d"
     },
     {
       "path": "evidence/benchmark_metrics.json",
@@ -154,6 +159,21 @@
       "sha256": "ee707fed9327c28ac2b66dbad20a53efe38d4e3a69d3eed720b1a25d1fe5ff8f"
     },
     {
+      "path": "evidence/supplementary/cell_28.log",
+      "bytes": 4072,
+      "sha256": "dd0939bc02441b3102bfd469f834eec139c45874f772bb95520251e3ed027f6e"
+    },
+    {
+      "path": "evidence/supplementary/cell_29.log",
+      "bytes": 10031,
+      "sha256": "beb974f60c349ee2f313c9814cf1a5954d0ea522f0471eb536b989b0b16a9de1"
+    },
+    {
+      "path": "evidence/supplementary/cell_30.log",
+      "bytes": 2153,
+      "sha256": "97ce83b239fe7d25ffd1d5b4c6895d46de541d494404e32622c9a6c57d57a7bd"
+    },
+    {
       "path": "evidence/train_manifest.json",
       "bytes": 1254,
       "sha256": "b6d16532544b346baa981a6a348e812c3d5b4232f410976f32b275a7297ccbb4"
@@ -169,9 +189,14 @@
       "sha256": "e95a35b30c1fd56c4a9da5decf61d80349cd9a9224b9939519e86937c588a9d3"
     },
     {
+      "path": "notebooks/supplementary_experiments_record.ipynb",
+      "bytes": 914991,
+      "sha256": "282da8a788922300bd8f025c377955d6c003da3d6d0e79768377e0e371738997"
+    },
+    {
       "path": "README.md",
-      "bytes": 6406,
-      "sha256": "3252d512248a7b0845c94016be25b6ec652b49876836c73801da6e3f8b0b92fb"
+      "bytes": 6949,
+      "sha256": "8c65d69f3112646c51853a191c256e2192b799a41fb0eb89bd9cb5391fca69b6"
     },
     {
       "path": "reference/eval_prompts.py",
@@ -267,6 +292,16 @@
       "path": "results/core/scores/scores.json",
       "bytes": 98387,
       "sha256": "7811db6ea77f6f1abc2a2e85e5d651dfddcc7c04443424f4d0f74d3a33237ac7"
+    },
+    {
+      "path": "results/supplementary/alignment_per_layer.png",
+      "bytes": 100724,
+      "sha256": "2637bc46f898a186848bb2e7732da5fa7ed843bae18ff188d39a48ecbdc36e79"
+    },
+    {
+      "path": "results/supplementary/notebook_summary.json",
+      "bytes": 8303,
+      "sha256": "b82c7865686bd038394e2914931805c22a7770d4355b1e16b61ce13a41affa15"
     },
     {
       "path": "scripts/analyze_results.py",

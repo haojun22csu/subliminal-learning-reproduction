@@ -1,0 +1,95 @@
+New output directory: /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/alignment_per_layer_5a714c8e3ff0499caa79c321805d346b
+gpu_check
+GPU: NVIDIA A100-SXM4-40GB
+PyTorch: 2.9.0+cu128
+FlashAttention: 2.8.3
+extract_per_layer
+[extract] n_prompts=256  adapter=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1
+[extract] extract_layer=None  position=all
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.10s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.08s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.07s/it]
+[extract] mean activations — BASE
+[extract] attaching LoRA adapter from /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1
+[extract] mean activations — STUDENT
+[extract] per-layer v_student.raw shape=(29, 3584)
+[extract] per-layer norm: min=0.0000 max=50.2794 argmax_layer=28
+
+[align] per-layer cos(v_student, v_teacher):
+  L00: cos=+0.000  |v_s|= 0.0000  |v_t|=  0.056
+  L01: cos=+0.494  |v_s|= 0.3802  |v_t|=  1.153
+  L02: cos=+0.598  |v_s|= 0.8784  |v_t|=  1.704
+  L03: cos=+0.727  |v_s|= 1.7999  |v_t|=  2.616
+  L04: cos=-0.714  |v_s|= 3.9268  |v_t|= 11.317
+  L05: cos=-0.653  |v_s|= 4.0322  |v_t|= 14.031
+  L06: cos=-0.646  |v_s|= 3.9999  |v_t|= 14.445
+  L07: cos=-0.496  |v_s|= 4.2574  |v_t|= 15.066
+  L08: cos=-0.367  |v_s|= 4.5159  |v_t|= 16.003
+  L09: cos=-0.129  |v_s|= 5.5597  |v_t|= 17.116
+  L10: cos=-0.045  |v_s|= 5.8433  |v_t|= 17.420
+  L11: cos=-0.018  |v_s|= 5.9319  |v_t|= 17.843
+  L12: cos=-0.084  |v_s|= 6.0107  |v_t|= 18.090
+  L13: cos=-0.125  |v_s|= 6.4140  |v_t|= 18.095
+  L14: cos=-0.090  |v_s|= 6.5699  |v_t|= 18.353
+  L15: cos=-0.099  |v_s|= 7.0547  |v_t|= 17.595
+  L16: cos=-0.105  |v_s|= 7.8314  |v_t|= 17.549
+  L17: cos=-0.138  |v_s|= 8.0056  |v_t|= 17.289
+  L18: cos=-0.148  |v_s|= 8.3553  |v_t|= 16.807
+  L19: cos=-0.064  |v_s|= 8.4996  |v_t|= 17.743
+  L20: cos=+0.148  |v_s|=10.4303  |v_t|= 19.094
+  L21: cos=+0.183  |v_s|=12.5884  |v_t|= 20.288
+  L22: cos=+0.295  |v_s|=15.9583  |v_t|= 22.093
+  L23: cos=+0.440  |v_s|=19.3802  |v_t|= 25.944
+  L24: cos=+0.513  |v_s|=24.6031  |v_t|= 31.195
+  L25: cos=+0.621  |v_s|=29.8834  |v_t|= 38.633
+  L26: cos=+0.643  |v_s|=32.6659  |v_t|= 45.870
+  L27: cos=+0.654  |v_s|=38.8339  |v_t|= 54.072
+  L28: cos=+0.336  |v_s|=50.2794  |v_t|= 62.166
+
+[extract] wrote /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/alignment_per_layer_5a714c8e3ff0499caa79c321805d346b/v_student_per_layer.pt
+analyze_per_layer
+
+True transformer-block alignment:
+L00 / slot 01: +0.494449
+L01 / slot 02: +0.598436
+L02 / slot 03: +0.726750
+L03 / slot 04: -0.714065
+L04 / slot 05: -0.653345
+L05 / slot 06: -0.645575
+L06 / slot 07: -0.495850
+L07 / slot 08: -0.367448
+L08 / slot 09: -0.129466
+L09 / slot 10: -0.045209
+L10 / slot 11: -0.018007
+L11 / slot 12: -0.083537
+L12 / slot 13: -0.125446
+L13 / slot 14: -0.090382
+L14 / slot 15: -0.099408
+L15 / slot 16: -0.105337
+L16 / slot 17: -0.138142
+L17 / slot 18: -0.147950
+L18 / slot 19: -0.063722
+L19 / slot 20: +0.148235
+L20 / slot 21: +0.182670
+L21 / slot 22: +0.295377
+L22 / slot 23: +0.439589
+L23 / slot 24: +0.512727
+L24 / slot 25: +0.620553
+L25 / slot 26: +0.642718
+L26 / slot 27: +0.654211
+L27 / slot 28: +0.335925
+
+Mean cosine (valid transformer blocks): +0.061741 (28/28)
+Previous L10 cosine: -0.018007
+New versus previous L10 direction cosine: +1.000000
+New versus previous L10 relative L2: 0
+NOTE: This is an endpoint diagnostic, not a strict paper EAS reproduction.
+
+PER-LAYER ALIGNMENT READY
+Results: /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/alignment_per_layer_5a714c8e3ff0499caa79c321805d346b
+Original vector and evaluation results were preserved.

@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "evidence_type": "Saved notebook execution outputs; supplementary raw artifacts not independently recomputed",
+  "source_notebook": {
+    "filename": "colab_preliminary_repro (1).ipynb",
+    "sha256": "b2b802c11cf6d88dd545e79cd265792ede25296251bbdc29a43a5a30f03242c8",
+    "bytes": 952221,
+    "cell_count": 31
+  },
+  "published_notebook": {
+    "path": "notebooks/supplementary_experiments_record.ipynb",
+    "sha256": "282da8a788922300bd8f025c377955d6c003da3d6d0e79768377e0e371738997",
+    "cell_count": 32,
+    "added_intro_cells": 1,
+    "removed_unused_balance_fields": 1,
+    "removed_metadata_paths": [
+      "metadata.colab.provenance"
+    ]
+  },
+  "source_cell_indices_zero_based": {
+    "alignment": 28,
+    "specificity_controls": 29,
+    "necessity": 30
+  },
+  "published_cell_indices_zero_based": {
+    "alignment": 29,
+    "specificity_controls": 30,
+    "necessity": 31
+  },
+  "raw_artifact_independently_recomputed": false,
+  "new_gpu_execution_performed_during_extraction": false,
+  "fresh_sequential_end_to_end_rerun_verified": false,
+  "core_single_seed_settings": {
+    "run_id": "qwen7b_s1_a5915d0321",
+    "base_model": "Qwen/Qwen2.5-7B-Instruct",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "upstream_commit": "89ab3616f6ed0e11a69481c1acd19d37c44e3706",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "precision": "BF16",
+    "training_seed": 1,
+    "epochs": 2,
+    "optimizer_updates": 1938,
+    "public_filtered_samples": 10000,
+    "training_samples_before_packing": 9500,
+    "validation_samples_before_packing": 500,
+    "lora_rank": 8,
+    "lora_alpha": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "training_batch_size": 8,
+    "gradient_accumulation_steps": 1,
+    "max_sequence_length": 256,
+    "packing": true,
+    "original_core_positive_evaluation_batch_size": 8,
+    "training_repeated_for_supplementary_experiments": false
+  },
+  "alignment": {
+    "source_cell_index_zero_based": 28,
+    "source_execution_count": 7,
+    "raw_artifact_independently_recomputed": false,
+    "matching_transformer_blocks": [
+      {
+        "block_index": 0,
+        "tensor_slot": 1,
+        "cosine": 0.494449
+      },
+      {
+        "block_index": 1,
+        "tensor_slot": 2,
+        "cosine": 0.598436
+      },
+      {
+        "block_index": 2,
+        "tensor_slot": 3,
+        "cosine": 0.72675
+      },
+      {
+        "block_index": 3,
+        "tensor_slot": 4,
+        "cosine": -0.714065
+      },
+      {
+        "block_index": 4,
+        "tensor_slot": 5,
+        "cosine": -0.653345
+      },
+      {
+        "block_index": 5,
+        "tensor_slot": 6,
+        "cosine": -0.645575
+      },
+      {
+        "block_index": 6,
+        "tensor_slot": 7,
+        "cosine": -0.49585
+      },
+      {
+        "block_index": 7,
+        "tensor_slot": 8,
+        "cosine": -0.367448
+      },
+      {
+        "block_index": 8,
+        "tensor_slot": 9,
+        "cosine": -0.129466
+      },
+      {
+        "block_index": 9,
+        "tensor_slot": 10,
+        "cosine": -0.045209
+      },
+      {
+        "block_index": 10,
+        "tensor_slot": 11,
+        "cosine": -0.018007
+      },
+      {
+        "block_index": 11,
+        "tensor_slot": 12,
+        "cosine": -0.083537
+      },
+      {
+        "block_index": 12,
+        "tensor_slot": 13,
+        "cosine": -0.125446
+      },
+      {
+        "block_index": 13,
+        "tensor_slot": 14,
+        "cosine": -0.090382
+      },
+      {
+        "block_index": 14,
+        "tensor_slot": 15,
+        "cosine": -0.099408
+      },
+      {
+        "block_index": 15,
+        "tensor_slot": 16,
+        "cosine": -0.105337
+      },
+      {
+        "block_index": 16,
+        "tensor_slot": 17,
+        "cosine": -0.138142
+      },
+      {
+        "block_index": 17,
+        "tensor_slot": 18,
+        "cosine": -0.14795
+      },
+      {
+        "block_index": 18,
+        "tensor_slot": 19,
+        "cosine": -0.063722
+      },
+      {
+        "block_index": 19,
+        "tensor_slot": 20,
+        "cosine": 0.148235
+      },
+      {
+        "block_index": 20,
+        "tensor_slot": 21,
+        "cosine": 0.18267
+      },
+      {
+        "block_index": 21,
+        "tensor_slot": 22,
+        "cosine": 0.295377
+      },
+      {
+        "block_index": 22,
+        "tensor_slot": 23,
+        "cosine": 0.439589
+      },
+      {
+        "block_index": 23,
+        "tensor_slot": 24,
+        "cosine": 0.512727
+      },
+      {
+        "block_index": 24,
+        "tensor_slot": 25,
+        "cosine": 0.620553
+      },
+      {
+        "block_index": 25,
+        "tensor_slot": 26,
+        "cosine": 0.642718
+      },
+      {
+        "block_index": 26,
+        "tensor_slot": 27,
+        "cosine": 0.654211
+      },
+      {
+        "block_index": 27,
+        "tensor_slot": 28,
+        "cosine": 0.335925
+      }
+    ],
+    "embedding_slot_excluded": 0,
+    "values_are_rounded_saved_output": true,
+    "mean_cosine_reported": 0.061741,
+    "extraction_prompts": 256,
+    "extraction_positions": "all non-padding input tokens",
+    "extract_layer": null,
+    "interpretation": "Genuine Student per-block differences compared with corresponding Teacher blocks at the final checkpoint; not a training-time EAS trajectory",
+    "figure": {
+      "path": "results/supplementary/alignment_per_layer.png",
+      "method": "Exact base64 decode of saved image/png output; not redrawn",
+      "sha256": "2637bc46f898a186848bb2e7732da5fa7ed843bae18ff188d39a48ecbdc36e79",
+      "width_pixels": 1800,
+      "height_pixels": 827
+    }
+  },
+  "specificity_controls": {
+    "source_cell_index_zero_based": 29,
+    "source_execution_count": 8,
+    "raw_artifact_independently_recomputed": false,
+    "prompts_per_set": 20,
+    "samples_per_prompt": 20,
+    "negative_animal": [
+      {
+        "condition": "Base",
+        "hits": 0,
+        "samples": 400,
+        "strict_cat_rate": 0.0,
+        "raw_artifact_independently_recomputed": false
+      },
+      {
+        "condition": "Student",
+        "hits": 3,
+        "samples": 400,
+        "strict_cat_rate": 0.0075,
+        "raw_artifact_independently_recomputed": false
+      },
+      {
+        "condition": "Sufficiency",
+        "hits": 56,
+        "samples": 400,
+        "strict_cat_rate": 0.14,
+        "raw_artifact_independently_recomputed": false
+      }
+    ],
+    "off_topic_first_word_cat": [
+      {
+        "condition": "Base",
+        "hits": 0,
+        "samples": 400,
+        "strict_cat_rate": 0.0,
+        "raw_artifact_independently_recomputed": false
+      },
+      {
+        "condition": "Student",
+        "hits": 0,
+        "samples": 400,
+        "strict_cat_rate": 0.0,
+        "raw_artifact_independently_recomputed": false
+      },
+      {
+        "condition": "Sufficiency",
+        "hits": 0,
+        "samples": 400,
+        "strict_cat_rate": 0.0,
+        "raw_artifact_independently_recomputed": false
+      }
+    ],
+    "negative_sufficiency_broader_upstream_matching": {
+      "hits": 74,
+      "samples": 400,
+      "rate": 0.185,
+      "includes_plural_cats_hits": 18,
+      "strict_comparison_uses_rate": 0.14
+    },
+    "off_topic_metric_scope": "Cat intrusion only; not correctness or general capability"
+  },
+  "necessity": {
+    "source_cell_index_zero_based": 30,
+    "source_execution_count": 6,
+    "raw_artifact_independently_recomputed": false,
+    "student_control": {
+      "hits": 641,
+      "samples": 1000,
+      "strict_cat_rate": 0.641
+    },
+    "student_component_replacement": {
+      "hits": 131,
+      "samples": 1000,
+      "strict_cat_rate": 0.131
+    },
+    "control_minus_replacement_percentage_points": 51.0,
+    "paired_prompt_bootstrap_95_ci_percentage_points": [
+      39.8,
+      62.1
+    ],
+    "bootstrap_repetitions": 5000,
+    "positive_prompts": 50,
+    "samples_per_prompt": 20,
+    "evaluation_batch_size": 4,
+    "evaluation_seed": 0,
+    "temperature": 1.0,
+    "max_new_tokens": 16,
+    "intervention": "Restore the Student component along the tiled L10 direction to the Base component at all blocks and all prefill positions; preserve the orthogonal component",
+    "comparison_scope": "Use 64.1% and 13.1% from this matched batch-4 pair; do not substitute the earlier batch-8 Student 63.8%"
+  }
+}

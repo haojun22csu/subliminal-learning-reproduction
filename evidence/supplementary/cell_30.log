@@ -1,0 +1,47 @@
+New output directory: /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/student_necessity_02ae7503752b48319c32b2e430b7ac77
+Two inference evaluations; 1000 responses each; no training.
+GPU: NVIDIA A100-SXM4-40GB
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.10s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.09s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.07s/it]
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.24s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.23s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.22s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.18s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.20s/it]
+StudentControl: 4/1000
+StudentControl: 104/1000
+StudentControl: 204/1000
+StudentControl: 304/1000
+StudentControl: 404/1000
+StudentControl: 504/1000
+StudentControl: 604/1000
+StudentControl: 704/1000
+StudentControl: 804/1000
+StudentControl: 904/1000
+StudentNecessity: 4/1000
+StudentNecessity: 104/1000
+StudentNecessity: 204/1000
+StudentNecessity: 304/1000
+StudentNecessity: 404/1000
+StudentNecessity: 504/1000
+StudentNecessity: 604/1000
+StudentNecessity: 704/1000
+StudentNecessity: 804/1000
+StudentNecessity: 904/1000
+
+STRICT FIRST-WORD CAT RATES
+StudentControl: 64.10% (641/1000)
+StudentNecessity: 13.10% (131/1000)
+Student - Necessity: +51.00 pp
+Paired prompt-bootstrap 95% CI: [+39.80, +62.10] pp
+
+NECESSITY READY
+Results: /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/student_necessity_02ae7503752b48319c32b2e430b7ac77/necessity_results.json
+Original Adapter, vector and previous evaluations were preserved.

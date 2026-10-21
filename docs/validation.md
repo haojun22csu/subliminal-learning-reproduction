@@ -12,3 +12,7 @@ Validation date: October 21, 2026. These checks verify the publication and saved
 No dependencies were installed, and no paid service, training, GPU inference, or model download was run for these checks. The GPU commands are reconstructed from successful historical task records; fresh end-to-end GPU replay remains unverified.
 
 Optional CPU plot generation uses the same Matplotlib version recorded in the experiment. `requirements-analysis.txt` is only for plotting; strict score recomputation needs the Python standard library.
+
+## Supplementary-record addition
+
+The user subsequently supplied a notebook with three executed supplementary cells. The public copy retains all 31 original cells' outputs and execution counts, adds an explanatory introduction, and removes only the unused personal balance field and transient provenance metadata. Its saved alignment PNG is extracted byte-for-byte. The 28 matching-block values are transcribed from printed rows; control and replacement summaries are explicitly marked as saved-output evidence. No supplementary raw JSONL or tensor was independently recomputed, and no GPU execution was performed for this addition.
