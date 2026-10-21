@@ -1,0 +1,24 @@
+{
+  "stage": "extract",
+  "source": "evidence/logs/extract/task.json",
+  "original_command": [
+    "/content/steering-vector-distillation/.venv/bin/python",
+    "-u",
+    "-m",
+    "subliminal.extract_student",
+    "base_model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+    "adapter_path=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1",
+    "finetune_mode=lora",
+    "numbers_prompts_path=/content/svd_simple_workspace/one_day_repro/data/generated/cat_qwen25_7b/raw.jsonl",
+    "v_teacher_path=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt",
+    "n_prompts=256",
+    "batch_size=4",
+    "extract_layer=10",
+    "position=all",
+    "dtype=bfloat16",
+    "attn_implementation=flash_attention_2",
+    "output_path=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/vectors/v_student.pt"
+  ],
+  "recorded_exit_code": 0,
+  "path_note": "Original Colab paths are provenance. Map them to a new run as described in docs/reproduce.md."
+}

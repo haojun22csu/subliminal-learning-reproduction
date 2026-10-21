@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-19T21:46:03.087621+00:00",
+  "dataset_revision": "4fda20d0413040b2de61448c89182716485d9839",
+  "vector_revision": "d37b6e4b72cef115f2dba4e06dc16635f9f51e78",
+  "files": [
+    {
+      "repo_id": "agu18dec/steering_vector_distillation",
+      "repo_type": "dataset",
+      "revision": "4fda20d0413040b2de61448c89182716485d9839",
+      "remote_path": "datasets/baseline/cat_qwen25_7b/raw.jsonl",
+      "local_path": "generated/cat_qwen25_7b/raw.jsonl",
+      "bytes": 13328590,
+      "sha256": "1320c88f73b0cbe9252c4a11f01bb3842654ceca3e9192f807bb5a437bd97f1a",
+      "remote_blob_id": "bab666d582c0797656377a146e534a83ddb46007",
+      "source_url": "https://huggingface.co/datasets/agu18dec/steering_vector_distillation/resolve/4fda20d0413040b2de61448c89182716485d9839/datasets/baseline/cat_qwen25_7b/raw.jsonl",
+      "rows": 30000,
+      "field_types": {
+        "completion:str": 30000,
+        "prompt:str": 30000,
+        "system_prompt:str": 30000
+      }
+    },
+    {
+      "repo_id": "agu18dec/steering_vector_distillation",
+      "repo_type": "dataset",
+      "revision": "4fda20d0413040b2de61448c89182716485d9839",
+      "remote_path": "datasets/baseline/cat_qwen25_7b/filtered/filtered_10000.jsonl",
+      "local_path": "filtered/cat_qwen25_7b/filtered_10000.jsonl",
+      "bytes": 6727290,
+      "sha256": "c7a1038f3653a8dffedbe1ad6e7bc4ebf0ef9ebe0a0463fb79ef2a95becd1c95",
+      "remote_blob_id": "64ab239d1ae077b2fc657b5c59231f9e0c85b835",
+      "source_url": "https://huggingface.co/datasets/agu18dec/steering_vector_distillation/resolve/4fda20d0413040b2de61448c89182716485d9839/datasets/baseline/cat_qwen25_7b/filtered/filtered_10000.jsonl",
+      "rows": 10000,
+      "field_types": {
+        "completion:str": 10000,
+        "judge_reasoning:str": 10000,
+        "judge_verdict:str": 10000,
+        "prompt:str": 10000,
+        "system_prompt:str": 10000
+      }
+    },
+    {
+      "repo_id": "camilablank/v_teacher_v_student_vectors",
+      "repo_type": "model",
+      "revision": "d37b6e4b72cef115f2dba4e06dc16635f9f51e78",
+      "remote_path": "section-3_numbers_vectors/v_teacher_all_prompt_tokens.pt",
+      "local_path": "vectors/v_teacher_qwen25_cat.pt",
+      "bytes": 834853,
+      "sha256": "40bd24600953bb854525b0fda61f4e7a74332e24045df0ce9d3e3ab5f47e10f5",
+      "remote_blob_id": "e7f64a888c4d56182d1d250308b2e4c4cff66990",
+      "source_url": "https://huggingface.co/camilablank/v_teacher_v_student_vectors/resolve/d37b6e4b72cef115f2dba4e06dc16635f9f51e78/section-3_numbers_vectors/v_teacher_all_prompt_tokens.pt",
+      "tensor_runtime_validation": "NEEDS VERIFICATION with torch on CPU or Colab"
+    }
+  ]
+}

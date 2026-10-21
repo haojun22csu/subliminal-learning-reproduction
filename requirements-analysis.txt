@@ -1,0 +1,2 @@
+# Optional plotting only; offline score recomputation uses the standard library.
+matplotlib==3.10.9

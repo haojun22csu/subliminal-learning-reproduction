@@ -1,0 +1,5 @@
+Condition,Cat Rate,Samples,GPU,CU Used,GPU Hours,Status
+Base,0.011000,1000,NVIDIA A100-SXM4-40GB,Not Recorded,Not Recorded,verified
+Student,0.638000,1000,NVIDIA A100-SXM4-40GB,Not Recorded,Not Recorded,verified
+Base + Student Vector,0.513000,1000,NVIDIA A100-SXM4-40GB,Not Recorded,Not Recorded,verified
+Student + Vector Replacement,Not Run,Not Run,Not Run,Not Run,Not Run,Not Run

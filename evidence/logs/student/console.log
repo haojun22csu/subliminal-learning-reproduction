@@ -1,0 +1,28 @@
+[steer-eval] run_name=student
+[steer-eval] model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28  adapter=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1
+[steer-eval] vector=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt
+[steer-eval] mode=add  alpha=0  norm=raw  layers=None  positions=prompt_all
+[steer-eval] output=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/eval/student
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.09s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.08s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]
+
+cat_rate = 0.6500  (650/1000)
+
+Top first-word answers:
+              cat    638
+            panda    257
+             lion     55
+       purrfectly     29
+          leopard      3
+             bull      3
+            kitty      2
+           kitten      2
+            pussy      2
+         purrfect      1

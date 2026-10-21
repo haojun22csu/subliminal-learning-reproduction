@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/content/steering-vector-distillation/.venv/bin/python",
+    "-u",
+    "-m",
+    "subliminal.extract_student",
+    "base_model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+    "adapter_path=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1",
+    "finetune_mode=lora",
+    "numbers_prompts_path=/content/svd_simple_workspace/one_day_repro/data/generated/cat_qwen25_7b/raw.jsonl",
+    "v_teacher_path=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt",
+    "n_prompts=256",
+    "batch_size=4",
+    "extract_layer=10",
+    "position=all",
+    "dtype=bfloat16",
+    "attn_implementation=flash_attention_2",
+    "output_path=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/vectors/v_student.pt"
+  ],
+  "cwd": "/content",
+  "started_utc": "2026-10-19T23:47:45.115368+00:00",
+  "exit_code": 0,
+  "wall_seconds": 27.689786009000272,
+  "finished_utc": "2026-10-19T23:48:12.805357+00:00"
+}

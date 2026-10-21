@@ -1,0 +1,85 @@
+diff --git a/src/subliminal/train.py b/src/subliminal/train.py
+index 4b15f15..054ba2f 100644
+--- a/src/subliminal/train.py
++++ b/src/subliminal/train.py
+@@ -58,6 +58,13 @@ class Config(pydra.Config):
+         self.save_steps = 0
+         self.val_split = 0.05
+ 
++        # One-day reproduction operational controls.
++        self.max_steps = -1
++        self.report_to = "none"
++        self.resume_from_checkpoint = ""
++        self.save_only_model = False
++        self.save_total_limit = 2
++
+         self.run_name = "cat_qwen25_7b_r8_a32_adamw_e10_lr1e-4_s1_v1"
+         self.dataset_run_name = "cat_nums_30k_seed42_qwen25_7b_v1"
+         self.filtered_dir = "data/filtered"
+@@ -152,6 +159,7 @@ def train(config: Config, data_file: str, output_dir: str):
+         output_dir=output_dir,
+         max_length=config.max_seq_length,
+         num_train_epochs=config.num_train_epochs,
++        max_steps=config.max_steps,
+         per_device_train_batch_size=config.per_device_train_batch_size,
+         gradient_accumulation_steps=config.gradient_accumulation_steps,
+         learning_rate=config.learning_rate,
+@@ -163,15 +171,15 @@ def train(config: Config, data_file: str, output_dir: str):
+         save_strategy=config.save_strategy,
+         save_steps=config.save_steps if config.save_strategy == "steps" else None,
+         eval_strategy="epoch" if val_ds is not None else "no",
+-        save_total_limit=20,
+-        save_only_model=True,
++        save_total_limit=config.save_total_limit,
++        save_only_model=config.save_only_model,
+         bf16=True,
+         gradient_checkpointing=True,
+         gradient_checkpointing_kwargs={"use_reentrant": False},
+         completion_only_loss=True,
+         packing=config.packing,
+         seed=config.seed,
+-        report_to="wandb",
++        report_to=config.report_to,
+         run_name=config.run_name,
+     )
+ 
+@@ -225,7 +233,7 @@ def train(config: Config, data_file: str, output_dir: str):
+         logger.info(f"injected custom torch.optim.SGD lr={config.learning_rate} {extra}")
+ 
+     logger.info("starting training")
+-    trainer.train()
++    trainer.train(resume_from_checkpoint=config.resume_from_checkpoint or None)
+     trainer.save_model(output_dir)
+     saved_kind = "adapter" if config.finetune_mode == "lora" else "model"
+     logger.info(f"{saved_kind} saved to {output_dir}")
+@@ -273,7 +281,7 @@ def main(config: Config):
+ 
+     assert data_file.exists(), f"filtered data missing: {data_file}"
+ 
+-    train(config, data_file=str(data_file), output_dir=str(out_dir))
++    trainer = train(config, data_file=str(data_file), output_dir=str(out_dir))
+ 
+     manifest = {
+         "run_name": config.run_name,
+@@ -283,6 +291,8 @@ def main(config: Config):
+         "data_file_sha256": _sha256(data_file),
+         "num_rows": _jsonl_line_count(data_file),
+         "base_model": config.model,
++        "train_code_sha256": _sha256(Path(__file__)),
++        "attn_implementation": config.attn_implementation,
+         "finetune_mode": config.finetune_mode,
+         "lora": (
+             {
+@@ -307,6 +317,12 @@ def main(config: Config):
+             "packing": config.packing,
+             "seed": config.seed,
+             "val_split": config.val_split,
++            "max_steps": config.max_steps,
++            "actual_optimizer_steps": trainer.state.global_step,
++            "report_to": config.report_to,
++            "resume_from_checkpoint": config.resume_from_checkpoint,
++            "save_only_model": config.save_only_model,
++            "save_total_limit": config.save_total_limit,
+         },
+     }
+     with open(out_dir / "train_manifest.json", "w") as f:

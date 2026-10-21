@@ -1,0 +1,401 @@
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 10000 examples [00:00, 254266.51 examples/s]
+2026-10-19 23:14:43,432 - subliminal.train - INFO - loaded 10000 training examples from /content/svd_simple_workspace/one_day_repro/data/filtered/cat_qwen25_7b/filtered_10000.jsonl
+
+Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
+Map:  12%|█▏        | 1153/10000 [00:00<00:00, 11418.93 examples/s]
+Map:  24%|██▍       | 2383/10000 [00:00<00:00, 11929.63 examples/s]
+Map:  36%|███▋      | 3643/10000 [00:00<00:00, 12031.50 examples/s]
+Map:  49%|████▉     | 4883/10000 [00:00<00:00, 12170.77 examples/s]
+Map:  67%|██████▋   | 6716/10000 [00:00<00:00, 12188.50 examples/s]
+Map:  84%|████████▍ | 8404/10000 [00:00<00:00, 7958.89 examples/s] 
+Map:  96%|█████████▋| 9639/10000 [00:00<00:00, 8781.63 examples/s]
+Map: 100%|██████████| 10000/10000 [00:01<00:00, 9728.93 examples/s]
+2026-10-19 23:14:44,474 - subliminal.train - INFO - example prompt: [{'role': 'user', 'content': 'Take these numbers: 741, 496, 382, 154, 211, 620, 575, 439. Add at most 10 more values (maximum 3 digits each) to continue the sequence. Present as space-delimited values. No explanation, just the numbers.'}]
+2026-10-19 23:14:44,474 - subliminal.train - INFO - example completion: [{'role': 'assistant', 'content': '734 483 378 161 218 632 585 449'}]
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 102.35it/s]
+2026-10-19 23:14:44,597 - subliminal.train - INFO - training mode: LoRA
+
+Tokenizing train dataset:   0%|          | 0/9500 [00:00<?, ? examples/s]
+Tokenizing train dataset:   1%|          | 75/9500 [00:00<00:12, 739.21 examples/s]
+Tokenizing train dataset:   2%|▏         | 163/9500 [00:00<00:11, 814.83 examples/s]
+Tokenizing train dataset:   3%|▎         | 250/9500 [00:00<00:11, 837.12 examples/s]
+Tokenizing train dataset:   4%|▎         | 339/9500 [00:00<00:10, 854.09 examples/s]
+Tokenizing train dataset:   4%|▍         | 426/9500 [00:00<00:10, 856.49 examples/s]
+Tokenizing train dataset:   5%|▌         | 514/9500 [00:00<00:10, 860.14 examples/s]
+Tokenizing train dataset:   6%|▋         | 601/9500 [00:00<00:10, 860.49 examples/s]
+Tokenizing train dataset:   7%|▋         | 689/9500 [00:00<00:10, 861.84 examples/s]
+Tokenizing train dataset:   8%|▊         | 778/9500 [00:00<00:10, 865.76 examples/s]
+Tokenizing train dataset:   9%|▉         | 865/9500 [00:01<00:09, 865.55 examples/s]
+Tokenizing train dataset:  10%|█         | 954/9500 [00:01<00:09, 869.38 examples/s]
+Tokenizing train dataset:  11%|█         | 1045/9500 [00:01<00:11, 712.34 examples/s]
+Tokenizing train dataset:  12%|█▏        | 1135/9500 [00:01<00:11, 757.76 examples/s]
+Tokenizing train dataset:  13%|█▎        | 1224/9500 [00:01<00:10, 790.05 examples/s]
+Tokenizing train dataset:  14%|█▍        | 1312/9500 [00:01<00:10, 812.78 examples/s]
+Tokenizing train dataset:  15%|█▍        | 1402/9500 [00:01<00:09, 834.34 examples/s]
+Tokenizing train dataset:  16%|█▌        | 1493/9500 [00:01<00:09, 853.53 examples/s]
+Tokenizing train dataset:  17%|█▋        | 1583/9500 [00:01<00:09, 863.37 examples/s]
+Tokenizing train dataset:  18%|█▊        | 1673/9500 [00:02<00:08, 870.07 examples/s]
+Tokenizing train dataset:  19%|█▊        | 1763/9500 [00:02<00:08, 876.83 examples/s]
+Tokenizing train dataset:  20%|█▉        | 1853/9500 [00:02<00:08, 881.29 examples/s]
+Tokenizing train dataset:  20%|██        | 1944/9500 [00:02<00:08, 888.37 examples/s]
+Tokenizing train dataset:  22%|██▏       | 2049/9500 [00:02<00:09, 811.36 examples/s]
+Tokenizing train dataset:  23%|██▎       | 2139/9500 [00:02<00:08, 831.63 examples/s]
+Tokenizing train dataset:  23%|██▎       | 2229/9500 [00:02<00:08, 848.62 examples/s]
+Tokenizing train dataset:  24%|██▍       | 2321/9500 [00:02<00:08, 864.97 examples/s]
+Tokenizing train dataset:  25%|██▌       | 2411/9500 [00:02<00:08, 872.44 examples/s]
+Tokenizing train dataset:  26%|██▋       | 2499/9500 [00:02<00:08, 869.76 examples/s]
+Tokenizing train dataset:  27%|██▋       | 2589/9500 [00:03<00:07, 875.48 examples/s]
+Tokenizing train dataset:  28%|██▊       | 2677/9500 [00:03<00:07, 875.50 examples/s]
+Tokenizing train dataset:  29%|██▉       | 2766/9500 [00:03<00:07, 878.00 examples/s]
+Tokenizing train dataset:  30%|███       | 2858/9500 [00:03<00:07, 885.01 examples/s]
+Tokenizing train dataset:  31%|███       | 2947/9500 [00:03<00:07, 884.40 examples/s]
+Tokenizing train dataset:  32%|███▏      | 3057/9500 [00:03<00:07, 820.87 examples/s]
+Tokenizing train dataset:  33%|███▎      | 3147/9500 [00:03<00:07, 838.44 examples/s]
+Tokenizing train dataset:  34%|███▍      | 3237/9500 [00:03<00:07, 854.64 examples/s]
+Tokenizing train dataset:  35%|███▌      | 3327/9500 [00:03<00:07, 867.12 examples/s]
+Tokenizing train dataset:  36%|███▌      | 3417/9500 [00:04<00:06, 874.24 examples/s]
+Tokenizing train dataset:  37%|███▋      | 3507/9500 [00:04<00:06, 880.20 examples/s]
+Tokenizing train dataset:  38%|███▊      | 3597/9500 [00:04<00:06, 881.72 examples/s]
+Tokenizing train dataset:  39%|███▉      | 3730/9500 [00:04<00:06, 878.92 examples/s]
+Tokenizing train dataset:  40%|████      | 3820/9500 [00:04<00:06, 883.29 examples/s]
+Tokenizing train dataset:  41%|████      | 3909/9500 [00:04<00:06, 882.30 examples/s]
+Tokenizing train dataset:  42%|████▏     | 4000/9500 [00:04<00:06, 821.71 examples/s]
+Tokenizing train dataset:  43%|████▎     | 4091/9500 [00:04<00:06, 842.90 examples/s]
+Tokenizing train dataset:  44%|████▍     | 4180/9500 [00:04<00:06, 854.43 examples/s]
+Tokenizing train dataset:  45%|████▍     | 4272/9500 [00:05<00:06, 868.22 examples/s]
+Tokenizing train dataset:  46%|████▌     | 4364/9500 [00:05<00:05, 879.20 examples/s]
+Tokenizing train dataset:  47%|████▋     | 4453/9500 [00:05<00:05, 881.23 examples/s]
+Tokenizing train dataset:  48%|████▊     | 4543/9500 [00:05<00:05, 882.21 examples/s]
+Tokenizing train dataset:  49%|████▉     | 4633/9500 [00:05<00:05, 885.38 examples/s]
+Tokenizing train dataset:  50%|█████     | 4767/9500 [00:05<00:05, 884.35 examples/s]
+Tokenizing train dataset:  51%|█████     | 4858/9500 [00:05<00:05, 886.54 examples/s]
+Tokenizing train dataset:  53%|█████▎    | 4990/9500 [00:05<00:05, 878.50 examples/s]
+Tokenizing train dataset:  54%|█████▎    | 5097/9500 [00:05<00:05, 819.87 examples/s]
+Tokenizing train dataset:  55%|█████▍    | 5186/9500 [00:06<00:05, 834.55 examples/s]
+Tokenizing train dataset:  56%|█████▌    | 5276/9500 [00:06<00:04, 849.24 examples/s]
+Tokenizing train dataset:  56%|█████▋    | 5366/9500 [00:06<00:04, 861.68 examples/s]
+Tokenizing train dataset:  57%|█████▋    | 5455/9500 [00:06<00:04, 864.63 examples/s]
+Tokenizing train dataset:  58%|█████▊    | 5544/9500 [00:06<00:04, 867.76 examples/s]
+Tokenizing train dataset:  59%|█████▉    | 5633/9500 [00:06<00:04, 871.77 examples/s]
+Tokenizing train dataset:  61%|██████    | 5763/9500 [00:06<00:04, 866.70 examples/s]
+Tokenizing train dataset:  62%|██████▏   | 5851/9500 [00:06<00:04, 868.66 examples/s]
+Tokenizing train dataset:  63%|██████▎   | 5983/9500 [00:06<00:04, 869.36 examples/s]
+Tokenizing train dataset:  64%|██████▍   | 6092/9500 [00:07<00:04, 817.54 examples/s]
+Tokenizing train dataset:  65%|██████▌   | 6181/9500 [00:07<00:03, 833.76 examples/s]
+Tokenizing train dataset:  66%|██████▌   | 6269/9500 [00:07<00:03, 844.79 examples/s]
+Tokenizing train dataset:  67%|██████▋   | 6359/9500 [00:07<00:03, 857.26 examples/s]
+Tokenizing train dataset:  68%|██████▊   | 6449/9500 [00:07<00:03, 864.53 examples/s]
+Tokenizing train dataset:  69%|██████▉   | 6538/9500 [00:07<00:03, 869.04 examples/s]
+Tokenizing train dataset:  70%|██████▉   | 6628/9500 [00:07<00:03, 873.80 examples/s]
+Tokenizing train dataset:  71%|███████   | 6717/9500 [00:07<00:03, 873.64 examples/s]
+Tokenizing train dataset:  72%|███████▏  | 6807/9500 [00:07<00:03, 878.57 examples/s]
+Tokenizing train dataset:  73%|███████▎  | 6898/9500 [00:08<00:02, 882.76 examples/s]
+Tokenizing train dataset:  74%|███████▎  | 7006/9500 [00:08<00:03, 817.14 examples/s]
+Tokenizing train dataset:  75%|███████▍  | 7096/9500 [00:08<00:02, 837.34 examples/s]
+Tokenizing train dataset:  76%|███████▌  | 7185/9500 [00:08<00:02, 851.20 examples/s]
+Tokenizing train dataset:  77%|███████▋  | 7274/9500 [00:08<00:02, 860.89 examples/s]
+Tokenizing train dataset:  78%|███████▊  | 7364/9500 [00:08<00:02, 867.76 examples/s]
+Tokenizing train dataset:  79%|███████▉  | 7493/9500 [00:08<00:02, 861.43 examples/s]
+Tokenizing train dataset:  80%|███████▉  | 7581/9500 [00:08<00:02, 864.83 examples/s]
+Tokenizing train dataset:  81%|████████  | 7689/9500 [00:09<00:02, 807.12 examples/s]
+Tokenizing train dataset:  82%|████████▏ | 7779/9500 [00:09<00:02, 826.81 examples/s]
+Tokenizing train dataset:  83%|████████▎ | 7866/9500 [00:09<00:01, 835.04 examples/s]
+Tokenizing train dataset:  84%|████████▎ | 7954/9500 [00:09<00:01, 844.72 examples/s]
+Tokenizing train dataset:  85%|████████▍ | 8058/9500 [00:09<00:01, 784.99 examples/s]
+Tokenizing train dataset:  86%|████████▌ | 8149/9500 [00:09<00:01, 816.06 examples/s]
+Tokenizing train dataset:  87%|████████▋ | 8240/9500 [00:09<00:01, 838.31 examples/s]
+Tokenizing train dataset:  88%|████████▊ | 8330/9500 [00:09<00:01, 855.19 examples/s]
+Tokenizing train dataset:  89%|████████▊ | 8420/9500 [00:09<00:01, 867.01 examples/s]
+Tokenizing train dataset:  90%|████████▉ | 8509/9500 [00:09<00:01, 869.74 examples/s]
+Tokenizing train dataset:  91%|█████████ | 8599/9500 [00:10<00:01, 875.33 examples/s]
+Tokenizing train dataset:  91%|█████████▏| 8688/9500 [00:10<00:00, 878.09 examples/s]
+Tokenizing train dataset:  92%|█████████▏| 8778/9500 [00:10<00:00, 881.75 examples/s]
+Tokenizing train dataset:  93%|█████████▎| 8868/9500 [00:10<00:00, 884.87 examples/s]
+Tokenizing train dataset:  94%|█████████▍| 8957/9500 [00:10<00:00, 883.90 examples/s]
+Tokenizing train dataset:  96%|█████████▌| 9090/9500 [00:10<00:00, 825.47 examples/s]
+Tokenizing train dataset:  97%|█████████▋| 9180/9500 [00:10<00:00, 842.78 examples/s]
+Tokenizing train dataset:  98%|█████████▊| 9271/9500 [00:10<00:00, 857.32 examples/s]
+Tokenizing train dataset:  99%|█████████▊| 9362/9500 [00:10<00:00, 868.62 examples/s]
+Tokenizing train dataset: 100%|█████████▉| 9454/9500 [00:11<00:00, 879.80 examples/s]
+Tokenizing train dataset: 100%|██████████| 9500/9500 [00:11<00:00, 853.67 examples/s]
+
+Packing train dataset:   0%|          | 0/9500 [00:00<?, ? examples/s]
+Packing train dataset:  84%|████████▍ | 8000/9500 [00:00<00:00, 72350.67 examples/s]
+Packing train dataset: 100%|██████████| 9500/9500 [00:00<00:00, 70556.16 examples/s]
+
+Tokenizing eval dataset:   0%|          | 0/500 [00:00<?, ? examples/s]
+Tokenizing eval dataset:  18%|█▊        | 89/500 [00:00<00:00, 875.40 examples/s]
+Tokenizing eval dataset:  36%|███▌      | 178/500 [00:00<00:00, 879.01 examples/s]
+Tokenizing eval dataset:  54%|█████▎    | 268/500 [00:00<00:00, 885.34 examples/s]
+Tokenizing eval dataset:  72%|███████▏  | 358/500 [00:00<00:00, 887.66 examples/s]
+Tokenizing eval dataset:  90%|████████▉ | 448/500 [00:00<00:00, 890.92 examples/s]
+Tokenizing eval dataset: 100%|██████████| 500/500 [00:00<00:00, 828.75 examples/s]
+
+Packing eval dataset:   0%|          | 0/500 [00:00<?, ? examples/s]
+Packing eval dataset: 100%|██████████| 500/500 [00:00<00:00, 49004.60 examples/s]
+2026-10-19 23:15:02,642 - subliminal.train - INFO - starting training
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+
+  0%|          | 0/100 [00:00<?, ?it/s]
+  1%|          | 1/100 [00:01<01:56,  1.18s/it]
+  2%|▏         | 2/100 [00:01<01:17,  1.26it/s]
+  3%|▎         | 3/100 [00:02<01:08,  1.42it/s]
+  4%|▍         | 4/100 [00:02<01:04,  1.48it/s]
+  5%|▌         | 5/100 [00:03<00:59,  1.60it/s]
+  6%|▌         | 6/100 [00:04<00:55,  1.68it/s]
+  7%|▋         | 7/100 [00:04<00:53,  1.73it/s]
+  8%|▊         | 8/100 [00:05<00:51,  1.78it/s]
+  9%|▉         | 9/100 [00:05<00:50,  1.80it/s]
+ 10%|█         | 10/100 [00:06<00:49,  1.81it/s]
+                                                
+{'loss': 0.7376, 'grad_norm': 2.980576515197754, 'learning_rate': 9.956320346634876e-05, 'entropy': 0.6648097425699234, 'num_tokens': 13736.0, 'mean_token_accuracy': 0.7397547006607056, 'epoch': 0.01}
+
+ 10%|█         | 10/100 [00:06<00:49,  1.81it/s]
+ 11%|█         | 11/100 [00:06<00:48,  1.84it/s]
+ 12%|█▏        | 12/100 [00:07<00:47,  1.85it/s]
+ 13%|█▎        | 13/100 [00:07<00:47,  1.84it/s]
+ 14%|█▍        | 14/100 [00:08<00:46,  1.84it/s]
+ 15%|█▌        | 15/100 [00:08<00:47,  1.78it/s]
+ 16%|█▌        | 16/100 [00:09<00:48,  1.75it/s]
+ 17%|█▋        | 17/100 [00:10<00:45,  1.81it/s]
+ 18%|█▊        | 18/100 [00:10<00:46,  1.77it/s]
+ 19%|█▉        | 19/100 [00:11<00:45,  1.80it/s]
+ 20%|██        | 20/100 [00:11<00:44,  1.78it/s]
+                                                
+{'loss': 0.5996, 'grad_norm': 1.8330341577529907, 'learning_rate': 9.473646649103818e-05, 'entropy': 0.6083900928497314, 'num_tokens': 27521.0, 'mean_token_accuracy': 0.7839953362941742, 'epoch': 0.02}
+
+ 20%|██        | 20/100 [00:11<00:44,  1.78it/s]
+ 21%|██        | 21/100 [00:12<00:44,  1.78it/s]
+ 22%|██▏       | 22/100 [00:12<00:42,  1.84it/s]
+ 23%|██▎       | 23/100 [00:13<00:47,  1.62it/s]
+ 24%|██▍       | 24/100 [00:14<00:45,  1.69it/s]
+ 25%|██▌       | 25/100 [00:14<00:42,  1.76it/s]
+ 26%|██▌       | 26/100 [00:15<00:43,  1.69it/s]
+ 27%|██▋       | 27/100 [00:15<00:43,  1.68it/s]
+ 28%|██▊       | 28/100 [00:16<00:41,  1.73it/s]
+ 29%|██▉       | 29/100 [00:16<00:39,  1.81it/s]
+ 30%|███       | 30/100 [00:17<00:37,  1.86it/s]
+                                                
+{'loss': 0.5843, 'grad_norm': 1.7834751605987549, 'learning_rate': 8.506183921362443e-05, 'entropy': 0.5871260643005372, 'num_tokens': 40814.0, 'mean_token_accuracy': 0.7848995208740235, 'epoch': 0.03}
+
+ 30%|███       | 30/100 [00:17<00:37,  1.86it/s]
+ 31%|███       | 31/100 [00:18<00:38,  1.78it/s]
+ 32%|███▏      | 32/100 [00:18<00:37,  1.80it/s]
+ 33%|███▎      | 33/100 [00:19<00:36,  1.84it/s]
+ 34%|███▍      | 34/100 [00:19<00:36,  1.79it/s]
+ 35%|███▌      | 35/100 [00:20<00:36,  1.76it/s]
+ 36%|███▌      | 36/100 [00:20<00:35,  1.79it/s]
+ 37%|███▋      | 37/100 [00:21<00:35,  1.80it/s]
+ 38%|███▊      | 38/100 [00:21<00:35,  1.73it/s]
+ 39%|███▉      | 39/100 [00:22<00:33,  1.80it/s]
+ 40%|████      | 40/100 [00:22<00:32,  1.84it/s]
+                                                
+{'loss': 0.5401, 'grad_norm': 1.9740294218063354, 'learning_rate': 7.158771761692464e-05, 'entropy': 0.5241962552070618, 'num_tokens': 54709.0, 'mean_token_accuracy': 0.8033292114734649, 'epoch': 0.04}
+
+ 40%|████      | 40/100 [00:23<00:32,  1.84it/s]
+ 41%|████      | 41/100 [00:23<00:32,  1.84it/s]
+ 42%|████▏     | 42/100 [00:24<00:32,  1.76it/s]
+ 43%|████▎     | 43/100 [00:24<00:31,  1.81it/s]
+ 44%|████▍     | 44/100 [00:25<00:31,  1.77it/s]
+ 45%|████▌     | 45/100 [00:25<00:32,  1.69it/s]
+ 46%|████▌     | 46/100 [00:26<00:32,  1.69it/s]
+ 47%|████▋     | 47/100 [00:27<00:34,  1.53it/s]
+ 48%|████▊     | 48/100 [00:27<00:33,  1.56it/s]
+ 49%|████▉     | 49/100 [00:28<00:32,  1.56it/s]
+ 50%|█████     | 50/100 [00:29<00:31,  1.61it/s]
+                                                
+{'loss': 0.513, 'grad_norm': 2.0258562564849854, 'learning_rate': 5.577423184847932e-05, 'entropy': 0.5341814547777176, 'num_tokens': 69831.0, 'mean_token_accuracy': 0.8027460694313049, 'epoch': 0.05}
+
+ 50%|█████     | 50/100 [00:29<00:31,  1.61it/s]
+ 51%|█████     | 51/100 [00:29<00:28,  1.70it/s]
+ 52%|█████▏    | 52/100 [00:30<00:28,  1.69it/s]
+ 53%|█████▎    | 53/100 [00:30<00:28,  1.67it/s]
+ 54%|█████▍    | 54/100 [00:31<00:26,  1.72it/s]
+ 55%|█████▌    | 55/100 [00:31<00:26,  1.73it/s]
+ 56%|█████▌    | 56/100 [00:32<00:25,  1.72it/s]
+ 57%|█████▋    | 57/100 [00:33<00:24,  1.72it/s]
+ 58%|█████▊    | 58/100 [00:33<00:24,  1.71it/s]
+ 59%|█████▉    | 59/100 [00:34<00:24,  1.68it/s]
+ 60%|██████    | 60/100 [00:34<00:23,  1.70it/s]
+                                                
+{'loss': 0.523, 'grad_norm': 1.854973316192627, 'learning_rate': 3.933501846281267e-05, 'entropy': 0.5304452091455459, 'num_tokens': 84184.0, 'mean_token_accuracy': 0.8056184232234955, 'epoch': 0.06}
+
+ 60%|██████    | 60/100 [00:34<00:23,  1.70it/s]
+ 61%|██████    | 61/100 [00:35<00:23,  1.69it/s]
+ 62%|██████▏   | 62/100 [00:36<00:21,  1.73it/s]
+ 63%|██████▎   | 63/100 [00:36<00:20,  1.79it/s]
+ 64%|██████▍   | 64/100 [00:37<00:19,  1.80it/s]
+ 65%|██████▌   | 65/100 [00:37<00:19,  1.81it/s]
+ 66%|██████▌   | 66/100 [00:38<00:18,  1.82it/s]
+ 67%|██████▋   | 67/100 [00:38<00:17,  1.83it/s]
+ 68%|██████▊   | 68/100 [00:39<00:17,  1.88it/s]
+ 69%|██████▉   | 69/100 [00:39<00:16,  1.87it/s]
+ 70%|███████   | 70/100 [00:40<00:16,  1.87it/s]
+                                                
+{'loss': 0.5123, 'grad_norm': 2.5150840282440186, 'learning_rate': 2.405152131093926e-05, 'entropy': 0.5088516980409622, 'num_tokens': 97412.0, 'mean_token_accuracy': 0.8036010265350342, 'epoch': 0.07}
+
+ 70%|███████   | 70/100 [00:40<00:16,  1.87it/s]
+ 71%|███████   | 71/100 [00:41<00:17,  1.64it/s]
+ 72%|███████▏  | 72/100 [00:41<00:16,  1.73it/s]
+ 73%|███████▎  | 73/100 [00:42<00:15,  1.77it/s]
+ 74%|███████▍  | 74/100 [00:42<00:14,  1.81it/s]
+ 75%|███████▌  | 75/100 [00:43<00:13,  1.83it/s]
+ 76%|███████▌  | 76/100 [00:43<00:12,  1.86it/s]
+ 77%|███████▋  | 77/100 [00:44<00:12,  1.80it/s]
+ 78%|███████▊  | 78/100 [00:44<00:12,  1.82it/s]
+ 79%|███████▉  | 79/100 [00:45<00:11,  1.82it/s]
+ 80%|████████  | 80/100 [00:46<00:11,  1.78it/s]
+                                                
+{'loss': 0.464, 'grad_norm': 2.3009655475616455, 'learning_rate': 1.157994445715706e-05, 'entropy': 0.4526795297861099, 'num_tokens': 110818.0, 'mean_token_accuracy': 0.8220575213432312, 'epoch': 0.08}
+
+ 80%|████████  | 80/100 [00:46<00:11,  1.78it/s]
+ 81%|████████  | 81/100 [00:46<00:10,  1.80it/s]
+ 82%|████████▏ | 82/100 [00:47<00:10,  1.76it/s]
+ 83%|████████▎ | 83/100 [00:47<00:09,  1.71it/s]
+ 84%|████████▍ | 84/100 [00:48<00:09,  1.72it/s]
+ 85%|████████▌ | 85/100 [00:48<00:08,  1.79it/s]
+ 86%|████████▌ | 86/100 [00:49<00:07,  1.76it/s]
+ 87%|████████▋ | 87/100 [00:50<00:07,  1.77it/s]
+ 88%|████████▊ | 88/100 [00:50<00:06,  1.74it/s]
+ 89%|████████▉ | 89/100 [00:51<00:06,  1.77it/s]
+ 90%|█████████ | 90/100 [00:51<00:05,  1.79it/s]
+                                                
+{'loss': 0.4981, 'grad_norm': 1.8689359426498413, 'learning_rate': 3.271776770026963e-06, 'entropy': 0.4981425881385803, 'num_tokens': 124926.0, 'mean_token_accuracy': 0.8138517916202546, 'epoch': 0.09}
+
+ 90%|█████████ | 90/100 [00:51<00:05,  1.79it/s]
+ 91%|█████████ | 91/100 [00:52<00:04,  1.80it/s]
+ 92%|█████████▏| 92/100 [00:52<00:04,  1.74it/s]
+ 93%|█████████▎| 93/100 [00:53<00:03,  1.76it/s]
+ 94%|█████████▍| 94/100 [00:53<00:03,  1.79it/s]
+ 95%|█████████▌| 95/100 [00:54<00:03,  1.62it/s]
+ 96%|█████████▌| 96/100 [00:55<00:02,  1.68it/s]
+ 97%|█████████▋| 97/100 [00:55<00:01,  1.75it/s]
+ 98%|█████████▊| 98/100 [00:56<00:01,  1.78it/s]
+ 99%|█████████▉| 99/100 [00:56<00:00,  1.81it/s]
+100%|██████████| 100/100 [00:57<00:00,  1.83it/s]
+                                                 
+{'loss': 0.5452, 'grad_norm': 2.433852195739746, 'learning_rate': 2.7337132953697554e-08, 'entropy': 0.5395801931619644, 'num_tokens': 138471.0, 'mean_token_accuracy': 0.7927944898605347, 'epoch': 0.1}
+
+100%|██████████| 100/100 [00:57<00:00,  1.83it/s]
+
+  0%|          | 0/51 [00:00<?, ?it/s][A
+
+  4%|▍         | 2/51 [00:00<00:04, 11.75it/s][A
+
+  8%|▊         | 4/51 [00:00<00:06,  7.36it/s][A
+
+ 10%|▉         | 5/51 [00:00<00:06,  6.87it/s][A
+
+ 12%|█▏        | 6/51 [00:00<00:06,  6.56it/s][A
+
+ 14%|█▎        | 7/51 [00:01<00:06,  6.45it/s][A
+
+ 16%|█▌        | 8/51 [00:01<00:07,  6.08it/s][A
+
+ 18%|█▊        | 9/51 [00:01<00:06,  6.14it/s][A
+
+ 20%|█▉        | 10/51 [00:01<00:06,  6.18it/s][A
+
+ 22%|██▏       | 11/51 [00:01<00:06,  6.07it/s][A
+
+ 24%|██▎       | 12/51 [00:01<00:06,  6.02it/s][A
+
+ 25%|██▌       | 13/51 [00:02<00:06,  6.11it/s][A
+
+ 27%|██▋       | 14/51 [00:02<00:06,  6.05it/s][A
+
+ 29%|██▉       | 15/51 [00:02<00:05,  6.00it/s][A
+
+ 31%|███▏      | 16/51 [00:02<00:05,  5.86it/s][A
+
+ 33%|███▎      | 17/51 [00:02<00:05,  5.99it/s][A
+
+ 35%|███▌      | 18/51 [00:02<00:05,  5.92it/s][A
+
+ 37%|███▋      | 19/51 [00:03<00:05,  5.88it/s][A
+
+ 39%|███▉      | 20/51 [00:03<00:05,  6.04it/s][A
+
+ 41%|████      | 21/51 [00:03<00:04,  6.01it/s][A
+
+ 43%|████▎     | 22/51 [00:03<00:04,  6.13it/s][A
+
+ 45%|████▌     | 23/51 [00:03<00:04,  6.01it/s][A
+
+ 47%|████▋     | 24/51 [00:03<00:04,  6.13it/s][A
+
+ 49%|████▉     | 25/51 [00:04<00:04,  6.16it/s][A
+
+ 51%|█████     | 26/51 [00:04<00:04,  6.04it/s][A
+
+ 53%|█████▎    | 27/51 [00:04<00:03,  6.11it/s][A
+
+ 55%|█████▍    | 28/51 [00:04<00:03,  6.22it/s][A
+
+ 57%|█████▋    | 29/51 [00:04<00:03,  6.22it/s][A
+
+ 59%|█████▉    | 30/51 [00:04<00:03,  6.28it/s][A
+
+ 61%|██████    | 31/51 [00:04<00:03,  6.14it/s][A
+
+ 63%|██████▎   | 32/51 [00:05<00:03,  6.24it/s][A
+
+ 65%|██████▍   | 33/51 [00:05<00:03,  5.86it/s][A
+
+ 67%|██████▋   | 34/51 [00:05<00:02,  5.98it/s][A
+
+ 69%|██████▊   | 35/51 [00:05<00:02,  6.07it/s][A
+
+ 71%|███████   | 36/51 [00:05<00:02,  6.01it/s][A
+
+ 73%|███████▎  | 37/51 [00:06<00:02,  5.79it/s][A
+
+ 75%|███████▍  | 38/51 [00:06<00:02,  5.58it/s][A
+
+ 76%|███████▋  | 39/51 [00:06<00:02,  5.85it/s][A
+
+ 78%|███████▊  | 40/51 [00:06<00:01,  5.62it/s][A
+
+ 80%|████████  | 41/51 [00:06<00:01,  5.82it/s][A
+
+ 82%|████████▏ | 42/51 [00:06<00:01,  5.97it/s][A
+
+ 84%|████████▍ | 43/51 [00:07<00:01,  5.61it/s][A
+
+ 86%|████████▋ | 44/51 [00:07<00:01,  5.38it/s][A
+
+ 88%|████████▊ | 45/51 [00:07<00:01,  5.68it/s][A
+
+ 90%|█████████ | 46/51 [00:07<00:00,  5.13it/s][A
+
+ 92%|█████████▏| 47/51 [00:07<00:00,  5.05it/s][A
+
+ 94%|█████████▍| 48/51 [00:08<00:00,  4.76it/s][A
+
+ 96%|█████████▌| 49/51 [00:08<00:00,  4.56it/s][A
+
+ 98%|█████████▊| 50/51 [00:08<00:00,  4.44it/s][A
+
+100%|██████████| 51/51 [00:08<00:00,  4.92it/s][A
+                                                 
+
+                                               
+[A{'eval_loss': 0.4851629436016083, 'eval_runtime': 8.923, 'eval_samples_per_second': 45.388, 'eval_steps_per_second': 5.716, 'eval_entropy': 0.49618129519855275, 'eval_num_tokens': 138471.0, 'eval_mean_token_accuracy': 0.8186938493859535, 'epoch': 0.1}
+
+100%|██████████| 100/100 [01:06<00:00,  1.83it/s]
+
+100%|██████████| 51/51 [00:08<00:00,  4.92it/s][A
+
+                                               [A
+                                                 
+{'train_runtime': 66.3091, 'train_samples_per_second': 12.065, 'train_steps_per_second': 1.508, 'train_loss': 0.551706714630127, 'epoch': 0.1}
+
+100%|██████████| 100/100 [01:06<00:00,  1.83it/s]
+100%|██████████| 100/100 [01:06<00:00,  1.51it/s]
+2026-10-19 23:16:09,825 - subliminal.train - INFO - adapter saved to /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/benchmark100
+Benchmark metrics: /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/benchmark100/benchmark_metrics.json
+Run summary and share the output in chat before full training. CU use is not inferred from step speed.

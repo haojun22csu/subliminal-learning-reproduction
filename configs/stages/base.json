@@ -1,0 +1,30 @@
+{
+  "stage": "base",
+  "source": "evidence/logs/base/task.json",
+  "original_command": [
+    "/content/steering-vector-distillation/.venv/bin/python",
+    "-u",
+    "-m",
+    "subliminal.eval_steered",
+    "model=/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+    "vector_path=/content/svd_simple_workspace/one_day_repro/data/vectors/v_teacher_qwen25_cat.pt",
+    "mode=add",
+    "alpha=0",
+    "norm=raw",
+    "layers=None",
+    "positions=prompt_all",
+    "prompt_set_name=pos",
+    "samples_per_prompt=20",
+    "temperature=1.0",
+    "max_new_tokens=16",
+    "seed=0",
+    "target_word=cat",
+    "batch_size=8",
+    "dtype=bfloat16",
+    "attn_implementation=flash_attention_2",
+    "run_name=base",
+    "output_dir=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/eval"
+  ],
+  "recorded_exit_code": 0,
+  "path_note": "Original Colab paths are provenance. Map them to a new run as described in docs/reproduce.md."
+}

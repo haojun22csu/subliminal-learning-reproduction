@@ -1,0 +1,22 @@
+{
+  "model": "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "adapter_path": null,
+  "vector_path": "/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/vectors/v_student.pt",
+  "mode": "add",
+  "alpha": 0.6,
+  "norm": "raw",
+  "layers": null,
+  "positions": "prompt_all",
+  "prompt_set_name": "pos",
+  "samples_per_prompt": 20,
+  "temperature": 1.0,
+  "max_new_tokens": 16,
+  "seed": 0,
+  "target_word": "cat",
+  "batch_size": 8,
+  "dtype": "bfloat16",
+  "attn_implementation": "flash_attention_2",
+  "run_name": "sufficiency",
+  "output_dir": "/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/eval",
+  "backend": "hf-transformers"
+}

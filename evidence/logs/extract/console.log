@@ -1,0 +1,19 @@
+[extract] n_prompts=256  adapter=/content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1
+[extract] extract_layer=10  position=all
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.10s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.09s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]
+[extract] mean activations — BASE
+[extract] attaching LoRA adapter from /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/checkpoints/student_e2_s1
+[extract] mean activations — STUDENT
+[extract] per-layer v_student.raw shape=(29, 3584)
+[extract] per-layer norm: min=0.0000 max=50.2794 argmax_layer=28
+[extract] tiled L10 direction across all layers
+[align] cos(v_student, v_teacher) at L10: -0.018
+
+[extract] wrote /content/drive/MyDrive/svd_one_day/runs/qwen7b_s1_a5915d0321/vectors/v_student.pt

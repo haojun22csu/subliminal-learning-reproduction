@@ -1,0 +1,16 @@
+# Generated environments, downloaded artifacts, and new experiment outputs.
+.venv*/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.mplconfig/
+outputs/
+runs/
+data/
+upstream/
+*.safetensors
+*.pt
+*.bin
+*.zip
+.env
+.env.*

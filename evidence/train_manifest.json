@@ -1,0 +1,38 @@
+{
+  "run_name": "student_e2_s1",
+  "dataset_run_name": "cat_qwen25_7b",
+  "filtered_basename": "filtered_10000.jsonl",
+  "data_file": "/content/svd_simple_workspace/one_day_repro/data/filtered/cat_qwen25_7b/filtered_10000.jsonl",
+  "data_file_sha256": "c7a1038f3653a8dffedbe1ad6e7bc4ebf0ef9ebe0a0463fb79ef2a95becd1c95",
+  "num_rows": 10000,
+  "base_model": "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "train_code_sha256": "469db94b323d7a6f86478c18af1b398f340f200efcb69ebc2fcf2e97e84107a7",
+  "attn_implementation": "flash_attention_2",
+  "finetune_mode": "lora",
+  "lora": {
+    "r": 8,
+    "alpha": 32,
+    "dropout": 0.0,
+    "target_modules": "q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj"
+  },
+  "train": {
+    "epochs": 2,
+    "lr": 0.0001,
+    "optim": "adamw_torch",
+    "optim_args": "",
+    "lr_scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "per_device_batch_size": 8,
+    "grad_accum": 1,
+    "max_seq_length": 256,
+    "packing": true,
+    "seed": 1,
+    "val_split": 0.05,
+    "max_steps": -1,
+    "actual_optimizer_steps": 1938,
+    "report_to": "none",
+    "resume_from_checkpoint": "",
+    "save_only_model": false,
+    "save_total_limit": 2
+  }
+}
